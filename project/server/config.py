@@ -1,7 +1,7 @@
 import os
 basedir = os.path.abspath(os.path.dirname(__file__))
 postgres_local_base = 'sqlite:///'
-database_name = 'diagnostic'
+database_name = 'flask_jwt_auth'
 
 
 class BaseConfig:
@@ -33,3 +33,4 @@ class ProductionConfig(BaseConfig):
     SECRET_KEY = 'diagnostic_secret'
     DEBUG = False
     SQLALCHEMY_DATABASE_URI = 'sqlite:///diagnostic'
+
